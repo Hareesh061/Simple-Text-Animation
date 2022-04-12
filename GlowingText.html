@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<title>glowing</title>
+<style>
+
+body{
+margin: 0;
+padding: 0;
+background: #000;
+}
+
+.hero{
+position: absolute;
+top: 30%;
+left: 15%;
+color: #fff;
+font-size: 50px;
+animation: animate 2.5s ease-in-out infinite alternate;
+-webkit-box-reflect: below 10px linear-gradient(transparent,#0003);
+}
+.apl{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: #fff;
+    font-size: 40px;
+    animation: animate 1.5s ease-in-out infinite alternate;
+    -webkit-box-reflect: below 10px linear-gradient(transparent,#0003);
+    }
+
+.app{
+  position: absolute;
+top: 15%;
+left: 20%;
+color: orange;
+  text-shadow: 0 0 100px #f0f;
+  border: 1px solid #22ebff;
+  padding: 5px;
+  background: linear-gradient(50deg, transparent 40%,orange);
+  
+}
+
+
+@keyframes animate{
+from{
+color: #fff;
+text-shadow: 0 0 10px #22ebff,0 0 20px #f0f,0 0 30px #ff0,0 0 40px #225, 0 0 50px #0ff;
+}
+to {
+  color: #D8D8D8;
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #CEF6F5, 0 0 30px #FBF2EF,0 0 40px #FACC2E, 0 0 50px #A9F5BC;
+}
+
+</style>
+
+</head>
+
+<body>
+  <h1 class="app" >The Web Text</h1>
+<h1 class="hero" > Learning takes time..........</h1>
+
+<h3 class="apl"> When your eyes are open text will glow.. when you close your eyes it will not glow...  </h3>
+</body>
+</html>
